@@ -1,4 +1,4 @@
-module github.com/nadirbasalamah/go-simple-module
+module github.com/nadirbasalamah/go-simple-module/v2
 
 go 1.15
 

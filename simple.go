@@ -8,10 +8,8 @@ import (
 )
 
 // Preprocess returns preprocessed text
-func Preprocess() []string {
+func Preprocess(sentence string) []string {
 	tk := pretrained.BertBaseUncased()
-
-	sentence := `The quick brown fox jumps over the [L A Z Y D O G]`
 	en, err := tk.EncodeSingle(sentence)
 	if err != nil {
 		log.Fatal(err)
